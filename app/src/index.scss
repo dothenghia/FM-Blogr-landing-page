@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+:root {
+    --font-family-title : 'Overpass';
+    --font-size-title : 20px;
+    /* 300, 600 */
+
+    --font-family-copy : 'Ubuntu';
+    --font-size-copy : 16px;
+    /* 400, 500 , 700 */
+
+    --bg-gradient-intro : linear-gradient(90deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
+    --bg-gradient-body : linear-gradient(90deg, rgba(44, 45, 63, 1) 0%, rgba(63, 65, 100, 1) 100%);
+
+    --color-CTA-text : hsl(356, 100%, 66%);
+    --color-CTA-hover-bg : hsl(355, 100%, 74%);
+    --color-text : hsl(0, 0%, 100%);
+    --color-heading : hsl(208, 49%, 24%);
+    --color-body-copy : hsl(207, 13%, 34%);
+    --color-footer-bg: hsl(240, 10%, 16%);
+    --color-footer-text : hsl(240, 2%, 79%);
+
+}
+
