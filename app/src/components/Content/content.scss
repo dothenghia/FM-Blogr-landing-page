@@ -1,0 +1,47 @@
+.content-container {
+    padding: 20px 10px;
+
+    & h1 {
+        margin-top: 10px;
+        font-family: 'Overpass';
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--color-heading);
+    }
+    & p {
+        margin-top: 20px;
+        font-family: 'Overpass';
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--color-heading);
+    }
+}
+
+.large {
+    & h1 {
+        font-size: 36px;
+        color: #fff;
+    }
+    & p {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content-container {
+        text-align: center;
+        padding: 20px 8px;
+        & h1 {
+            font-size: 24px;
+            padding: 0 40px;
+        }
+        & p {
+            font-size: 17px;
+        }
+    }
+    .large {
+        & h1 {
+            font-size: 30px;
+        }
+    }
+}

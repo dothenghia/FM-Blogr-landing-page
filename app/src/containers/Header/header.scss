@@ -2,7 +2,7 @@
     height: 600px;
     padding-top: 40px;
 
-    border-bottom-left-radius: 60px ;
+    border-bottom-left-radius: 100px ;
     
     background-image: url('../../assets/images/bg-pattern-intro-desktop.svg') , linear-gradient(90deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%) ;
     background-repeat: no-repeat, no-repeat;
@@ -88,7 +88,7 @@
                 background-color: #fff;
                 border-radius: 8px;
                 list-style: none;
-                box-shadow: 0px 2px 30px -8px rgba(0,0,0,0.8);
+                box-shadow: 0px 10px 30px -8px rgba(0,0,0,0.8);
             }
 
             &-item {
@@ -156,13 +156,13 @@
 
 .start-button {
     height: 50px;
+    width: 160px;
     outline: none;
     border: none;
 
     margin: 10px;
 
     background-color: #fff;
-    padding: 0 20px;
     border-radius: 25px;
     font-family: var(--font-family-copy);
     font-weight: 700;
@@ -177,13 +177,13 @@
 
 .learn-button {
     height: 50px;
+    width: 160px;
     outline: none;
     border: 2px solid #fff;
 
     margin: 10px;
 
     background-color: transparent;
-    padding: 0 20px;
     border-radius: 25px;
     font-family: var(--font-family-copy);
     font-weight: 700;
@@ -287,6 +287,7 @@
             position: absolute;
             top: -60px;
             right: 20px;
+            cursor: pointer;
         }
         &__modal {
             display: none;
@@ -333,14 +334,15 @@
                 transform: rotate(0deg);
                 transition: all 0.5s ease;
             }
-            &:hover {
+
+            &.mobile__drop-show {
                 color: rgb(113, 113, 141);
             }
-            &:hover::after {
-                transform: rotate(180deg);
-            }
-            &:hover .mobile__drop-list {
+            &.mobile__drop-show .mobile__drop-list {
                 display: block;
+            }
+            &.mobile__drop-show::after {
+                transform: rotate(180deg);
             }
         }
         
@@ -408,8 +410,9 @@
         text-align: center;
     
         &-title {
-            font-size: 38px;
+            font-size: 32px;
             font-weight: 600;
+            padding: 0 20px;
         }
     
         &-subtitle {

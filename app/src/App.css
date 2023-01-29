@@ -5,5 +5,5 @@
 }
 
 .app {
-    /* height: 3000px; */
+    overflow: hidden;
 }
